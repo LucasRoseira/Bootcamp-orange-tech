@@ -24,7 +24,7 @@ class Pessoa {
         } else if (imc <= 30) {
             return 'Acima do peso';
         } else if (imc <= 30) {
-            return 'Acima do peso';
+            return 'Obeso';
         } else {
             return 'Obesidade Grave';
         }
