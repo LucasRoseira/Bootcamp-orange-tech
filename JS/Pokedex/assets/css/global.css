@@ -8,7 +8,7 @@ body {
 }
 
 .content {
-    width: 100vh;
+    max-width: 100vh;
     height: 100vh;
     padding: 1rem;
     background-color: #fff;
