@@ -42,15 +42,9 @@ console.log(lucas.altura);
 
 console.table(lucas);
 
-//instanciando a class
-
 const jane = new Pessoa('Jane', 18);
-// jane.nome = 'Jane';
-// jane.idade = '18';
 jane.descrever();
 
 
 const melissa = new Pessoa('Melissa', 22);
-// melissa.nome = 'Melissa';
-// melissa.idade = '18';
 melissa.descrever();

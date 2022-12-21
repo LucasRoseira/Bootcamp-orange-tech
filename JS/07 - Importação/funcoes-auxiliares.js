@@ -12,9 +12,6 @@ function print(texto) {
     console.log(texto);
 }
 
-// let texto;
-// texto = gets();
-
 module.exports = { gets, print };
 
 
