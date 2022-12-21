@@ -1,18 +1,3 @@
-// function printaMeuNome(nome) {
-//     return nome;
-// }
-
-// printaMeuNome('Lucas');
-// printaMeuNome('Renan');
-// printaMeuNome('Vitor');
-
-// function ehMaiorDeIdade(idade) {
-//     idade > 17 ? console.log((printaMeuNome('Lucas ') + 'Eh maior de idade')) : console.log('eh menor de idade');
-// }
-
-// ehMaiorDeIdade(26);
-
-
 function aplicarDesconto(valor, desconto) {
     return (valor - (valor * (desconto / 100)));
 }
