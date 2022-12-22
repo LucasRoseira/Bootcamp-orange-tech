@@ -1,4 +1,4 @@
-const { gets, print } = require('./funcoes-auxiliares');
+const { gets, print } = require('../funcoes-auxiliares');
 
 
 // const funcoes {gets, print} = require('./funcoes-auxiliares');
@@ -34,11 +34,4 @@ for (let i = 0; i < quantidadeDeAlunos; i++) {
 }
 
 print(maiorValorEncontrado);
-
-// for (let i = 0; i < numeroSorteados.length; i++) {
-//     const numeroSorteado = numeroSorteados[i];
-//     if (numeroSorteado > maiorValor) {
-//         maiorValor = numeroSorteado;
-//     }
-// }
 
