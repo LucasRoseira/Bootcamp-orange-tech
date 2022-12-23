@@ -1,4 +1,5 @@
-const { gets, print } = require('../Desafios Basicos/funcoes-auxiliares.js');
+const { print } = require('../Desafios Basicos/funcoes-auxiliares.js');
+
 
 
 let n = 3;
@@ -8,7 +9,6 @@ const operacoes = ['*', '/', '+', '-'];
 
 function calcularFatorialDesajustado(n) {
 
-    if(n == 0 ) return 0;
     for (let i = n, j = 0; i > 0; i--) {
         resultado += i;
 
@@ -19,8 +19,8 @@ function calcularFatorialDesajustado(n) {
         j++;
 
         if (j > 3) {
-            j = 0
-        };
+            j = 0;
+        }
 
     }
 
@@ -32,5 +32,6 @@ function parse(str) {
 }
 
 var funcao = calcularFatorialDesajustado(n);
+
 
 print(Math.round(parse(funcao)));

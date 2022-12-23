@@ -1,4 +1,4 @@
-const entradas = [10, 1, 2, 3, 4, 5, 18, 33, 85, 29, 44, 33];
+const entradas = '[ ]';
 let i = 0;
 
 
