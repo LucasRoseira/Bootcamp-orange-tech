@@ -1,18 +1,47 @@
+import { useNavigate } from "react-router-dom";
+import bannerImage from "../../assets/banner.png";
 
-import { Link } from 'react-router-dom';
-import { Header } from '../../components/Header';
-import { Button } from '../../components/Button';
+import { Button } from "../../components/Button";
 
+import { Header } from "../../components/Header";
+
+import { Container, Title, TitleHighlight, TextContent } from "./styles";
 
 const Home = () => {
-  //Para retornar mais de um elemento precisa se usar a forma abaixo <> </>
+  const navigate = useNavigate();
+
+  const handleClickSignIn = () => {
+
+    navigate('/login');
+  };
+
   return (
     <>
-      <Header/>
-      {/* <Button title="Teste 1" />
-      <Button variant="secondary" title="Teste 2"/>
-      <Link to="/login">Fazer login</Link> */}
-      {/* <button>Fazer login</button> */}
+      <Header />
+      <Container>
+        <div>
+          <Title>
+            <TitleHighlight>
+              Implemente <br />
+            </TitleHighlight>
+            o seu futuro global agora!
+          </Title>
+          <TextContent>
+            Domine as tecnologias utilizadas pelas empresas mais inovadoras do
+            mundo e encare seu novo desafio profissional, evoluindo em
+            comunidade com os melhores experts.
+          </TextContent>
+          <Button
+            title="Começar agora"
+            variant="secondary"
+            onClick={handleClickSignIn}
+            type="button"
+          />
+        </div>
+        <div>
+          <img src={bannerImage} alt="Imagem principal do site." />
+        </div>
+      </Container>
     </>
   );
 };

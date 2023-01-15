@@ -9,6 +9,7 @@ export const ButtonContainer = styled.button`
     padding: 2px 12px;
     min-width: 120px;
     width: 100%;
+
 ${({ variant }) =>
   variant !== "primary" &&
   css`
@@ -16,10 +17,15 @@ ${({ variant }) =>
     height: 33px;
     background: #E41650;
 
+    &:hover {
+      opacity: 0.6;
+      cursor: pointer;
+    }
+
     &::after {
-        content: '',
+        content: '';
         position: absolute;
-        border: 1px solid #E4105D;
+        border: 1px solid #e4105D;
         top: -5px;
         left: -6px;
         width: calc(100% + 10px);
