@@ -19,12 +19,6 @@ export const Column = styled.div`
     flex: 1;
 `
 
-export const ErrorText = styled.p `
-    color: #FF0000;
-    font-size 12px;
-    margin: 5px 0
-`;
-
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
